@@ -1,8 +1,9 @@
 ---
 name: website-zero-to-live
 description: "Build and launch a personal website from a resume, portfolio, project notes, or a short introduction. Use when a user wants a personal site, job-search portfolio, resume website, or AI-assisted website creation through preview, domain purchase, DNS, HTTPS, deployment, and handoff. 适用于秋招求职、个人主页、作品集、简历网站及从零建站上线。For an existing site, continue its current implementation."
+license: MIT
 metadata:
-  version: "1.1.1"
+  version: "1.1.2"
 ---
 
 # Personal Website Launch
@@ -10,6 +11,8 @@ metadata:
 帮助用户用 AI 快速打造并上线自己的个人网站。优先交付可以公开访问、展示真实经历与作品的网站；根据目标岗位组织内容，让技术与非技术岗位的求职者都能使用。
 
 项目的使用与权利边界见 [法律声明](LEGAL.md)。它不替代具体网站的隐私政策、业务条款或开源许可证，不应自动复制为网站页面。
+
+**个人网站不是敏感资料保险箱。** 不把密码、密钥、访问令牌、身份证件、财务/健康隐私、私人原始简历或他人未授权材料放入网站、公开仓库、前端资源和构建产物。只发布用户明确允许公开的最少内容；隐藏链接、`robots.txt` 和 `noindex` 不作为保密或访问控制。
 
 ## When to Use
 
@@ -65,6 +68,7 @@ metadata:
 ## Quality Rules
 
 - 保留用户已批准的公开边界。简历中的手机号、学校、地址、客户材料等不会因为输入给代理就自动获准发布。
+- 发布前检查源码、Git 历史、下载附件、前端 bundle、source map、构建产物和日志，清理不应公开的资料。凭据通过受控服务端秘密管理使用；静态展示站不承载敏感资料存储。发现泄露时停止继续发布，说明影响并由获授权人员撤销/轮换凭据，再处理历史、缓存和受影响副本。
 - 一次完成一个可操作的切片；不以模板页面数、依赖数或测试数替代作品价值。
 - 有私有数据时校验身份与对象权限；浏览器存储、进程内存和云端持久化如实区分。
 - 使用当前官方资料，不照抄旧价格、DNS值、部署账号或工作流ID。

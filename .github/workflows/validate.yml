@@ -1,0 +1,29 @@
+name: Validate skill and release package
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Test release tooling
+        run: python3 -B -m unittest discover -s tests -v
+      - name: Verify committed release
+        run: python3 scripts/release.py check
+      - name: Rebuild and verify reproducibility
+        run: |
+          python3 scripts/release.py build
+          python3 scripts/release.py check
+          git diff --exit-code -- SHA256SUMS dist
+          git diff --check
