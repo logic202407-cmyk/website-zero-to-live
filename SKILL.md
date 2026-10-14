@@ -2,12 +2,14 @@
 name: website-zero-to-live
 description: "Build and launch a personal website from a resume, portfolio, project notes, or a short introduction. Use when a user wants a personal site, job-search portfolio, resume website, or AI-assisted website creation through preview, domain purchase, DNS, HTTPS, deployment, and handoff. 适用于秋招求职、个人主页、作品集、简历网站及从零建站上线。For an existing site, continue its current implementation."
 metadata:
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # Personal Website Launch
 
 帮助用户用 AI 快速打造并上线自己的个人网站。优先交付可以公开访问、展示真实经历与作品的网站；根据目标岗位组织内容，让技术与非技术岗位的求职者都能使用。
+
+项目的使用与权利边界见 [法律声明](LEGAL.md)。它不替代具体网站的隐私政策、业务条款或开源许可证，不应自动复制为网站页面。
 
 ## When to Use
 

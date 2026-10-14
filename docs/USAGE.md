@@ -1,6 +1,6 @@
 # 安装与使用
 
-通过README中的skills CLI命令安装，或复制完整技能目录到目标代理公布的技能路径。保留 `SKILL.md`、`agents/`、`references/` 和 `assets/`；刷新技能发现后使用 `$website-zero-to-live`，也可要求代理读取入口的本地绝对路径。
+通过README中的skills CLI命令安装，或复制完整技能目录到目标代理公布的技能路径。保留 `SKILL.md`、`LEGAL.md`、`agents/`、`references/` 和 `assets/`；刷新技能发现后使用 `$website-zero-to-live`，也可要求代理读取入口的本地绝对路径。使用前阅读技能目录内的 `LEGAL.md`；它不是生成网站的通用隐私政策或开源许可证。
 
 ## 产品/运营求职网站
 

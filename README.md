@@ -6,7 +6,9 @@
 
 默认交付轻量个人网站：个人介绍、代表作品、本人贡献、求职方向与联系入口。登录、数据库、支付或模型功能在确有需要时再增加。
 
-**Skill name:** `website-zero-to-live` · **Version:** `1.1.0`
+**Skill name:** `website-zero-to-live` · **Version:** `1.1.1`
+
+使用前请阅读[法律声明](LEGAL.md)，了解AI输出、公开资料、第三方费用、作品权利和责任边界。
 
 ## Installation
 
@@ -32,7 +34,7 @@ npx skills add . --list
 
 ### Manual installation
 
-下载 [1.1.0 分享包](dist/website-zero-to-live-1.1.0.zip)，将其中完整的 `website-zero-to-live/` 文件夹复制到目标代理实际公布的技能目录。保留 `SKILL.md`、`agents/`、`references/` 和 `assets/`，然后刷新技能发现或开启新会话。
+下载 [1.1.1 分享包](dist/website-zero-to-live-1.1.1.zip)，将其中完整的 `website-zero-to-live/` 文件夹复制到目标代理实际公布的技能目录。保留 `SKILL.md`、`LEGAL.md`、`agents/`、`references/` 和 `assets/`，然后刷新技能发现或开启新会话。
 
 也可以直接要求代理读取仓库中 `SKILL.md` 的本地绝对路径。不同宿主的自动发现与工具支持以其当前说明为准。
 
@@ -76,6 +78,7 @@ npx skills add . --list
 ```text
 website-zero-to-live/
 ├── SKILL.md           # 触发场景、决策与主流程
+├── LEGAL.md           # 法律声明与使用边界
 ├── agents/            # 可选的代理UI元信息
 ├── references/        # 按需加载的详细方法
 ├── assets/            # 内容、制作和交付模板
@@ -102,4 +105,4 @@ website-zero-to-live/
 
 验证范围见 [VALIDATION.md](docs/VALIDATION.md)。技能需要实际工具和真实项目验收，文件检查不代表任意网站均可自动上线。
 
-公开访问不自动授予开源许可；本仓库尚未指定开源许可证。第三方工具与素材遵守各自许可。`SHA256SUMS` 和ZIP内清单用于检查分发完整性。
+公开访问不自动授予开源许可；本仓库尚未指定开源许可证。详细说明见[法律声明](LEGAL.md)。第三方工具与素材遵守各自许可。`SHA256SUMS` 和ZIP内清单用于检查分发完整性。
