@@ -1,0 +1,4 @@
+interface:
+  display_name: "从零建站到正式上线"
+  short_description: "完成网站需求设计、开发验证、域名选购与配置、部署验收及维护交接"
+  default_prompt: "使用 $website-zero-to-live 从当前想法或现有仓库开始，按网站类型完成需求、实现、验证及域名上线准备，并在已有授权范围内执行发布与验收。"

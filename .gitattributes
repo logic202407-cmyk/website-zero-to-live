@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+SHA256SUMS text eol=lf
+*.sha256 text eol=lf
+*.zip binary
